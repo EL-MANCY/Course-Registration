@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="449.0" prefWidth="792.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="AllCourses.CoursesController">
+   <children>
+      <ComboBox fx:id="LevelField" layoutX="92.0" layoutY="69.0" onAction="#handelButtonAction" prefHeight="31.0" prefWidth="214.0" promptText="Select Level" />
+      <ComboBox fx:id="c1" layoutX="49.0" layoutY="153.0" prefWidth="150.0" />
+      <ComboBox fx:id="c2" layoutX="321.0" layoutY="153.0" prefWidth="150.0" />
+      <ComboBox fx:id="c5" layoutX="306.0" layoutY="247.0" prefWidth="150.0" />
+      <ComboBox fx:id="c4" layoutX="35.0" layoutY="247.0" prefWidth="150.0" />
+      <ComboBox fx:id="c6" layoutX="540.0" layoutY="254.0" prefWidth="150.0" />
+      <ComboBox fx:id="c3" layoutX="540.0" layoutY="153.0" prefWidth="150.0" />
+   </children>
+</AnchorPane>

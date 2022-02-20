@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="983.0" prefWidth="956.0" style="-fx-border-color: white; -fx-background-color: linear-gradient(to right top,#30475E,#4c647c,#798b9e,#e99a9a,#e88181, F05454); -fx-background-radius: 0.9em;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Course.CoursesController">
+   <children>
+      <ImageView fitHeight="1048.0" fitWidth="829.0" layoutX="46.0" layoutY="-175.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/263283420_612728530017848_992446525200088254_n.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="20.0" layoutY="157.0" prefHeight="52.0" prefWidth="203.0" style="-fx-text-fill: white;" text="First Name">
+         <font>
+            <Font name="Franklin Gothic Demi" size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="491.0" layoutY="165.0" style="-fx-text-fill: white;" text="Last Name">
+         <font>
+            <Font name="Franklin Gothic Demi" size="30.0" />
+         </font>
+      </Label>
+      <TextField fx:id="FnField" layoutX="15.0" layoutY="218.0" onAction="#handelButtonAction" prefHeight="43.0" prefWidth="450.0" style="-fx-border-color: #B1D0E0; -fx-border-width: 2px; -fx-border-radius: 0.6em;" />
+      <TextField fx:id="LnField" layoutX="496.0" layoutY="218.0" onAction="#handelButtonAction" prefHeight="43.0" prefWidth="450.0" style="-fx-border-radius: 0.6em; -fx-border-color: #B1D0E0; -fx-border-width: 2px;" />
+      <Label layoutX="18.0" layoutY="272.0" prefHeight="74.0" prefWidth="219.0" style="-fx-text-fill: white;" text="Student  No.">
+         <font>
+            <Font name="Franklin Gothic Demi" size="30.0" />
+         </font>
+      </Label>
+      <TextField fx:id="phoneField" layoutX="15.0" layoutY="343.0" onAction="#handelButtonAction" prefHeight="43.0" prefWidth="450.0" style="-fx-border-color: #B1D0E0; -fx-border-width: 2px; -fx-border-radius: 0.6em;" />
+      <Label layoutX="265.0" layoutY="418.0" />
+      <Label layoutX="499.0" layoutY="420.0" prefHeight="45.0" prefWidth="124.0" style="-fx-text-fill: white;" text="Grade">
+         <font>
+            <Font name="Franklin Gothic Demi" size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="496.0" layoutY="291.0" style="-fx-text-fill: white;" text="Email Address">
+         <font>
+            <Font name="Franklin Gothic Demi" size="30.0" />
+         </font>
+      </Label>
+      <TextField fx:id="emailField" layoutX="496.0" layoutY="343.0" onAction="#handelButtonAction" prefHeight="43.0" prefWidth="450.0" style="-fx-background-radius: .6em; -fx-border-color: #B1D0E0;" />
+      <Label layoutX="324.0" layoutY="564.0" style="-fx-text-fill: white;" text="Choose Your Classes">
+         <font>
+            <Font name="Franklin Gothic Demi" size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="20.0" layoutY="424.0" style="-fx-text-fill: white;" text="Choose Classes Time">
+         <font>
+            <Font name="Franklin Gothic Demi" size="30.0" />
+         </font>
+      </Label>
+      <Button fx:id="submitBtn" layoutX="510.0" layoutY="917.0" mnemonicParsing="false" onAction="#handelButtonAction" prefHeight="52.0" prefWidth="227.0" style="-fx-background-radius: 0 .6em; -fx-border-radius: .6em; -fx-background-color: #F05454; -fx-border-color: black; -fx-border-width: 1px; -fx-font-weight: bold; -fx-font-size: 20px; -fx-border-color: white;" text="Submit">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <ComboBox fx:id="c1" layoutX="136.0" layoutY="662.0" onAction="#handelButtonAction" prefHeight="36.0" prefWidth="278.0" style="-fx-background-radius: .6em;" />
+      <ComboBox fx:id="TimeField" layoutX="15.0" layoutY="484.0" prefHeight="43.0" prefWidth="450.0" style="-fx-background-radius: .6em;" />
+      <ComboBox fx:id="gradeField" layoutX="491.0" layoutY="484.0" onAction="#handelButtonAction" prefHeight="43.0" prefWidth="450.0" style="-fx-background-radius: .6em;" />
+      <Button fx:id="BackBtn" layoutX="217.0" layoutY="917.0" mnemonicParsing="false" onAction="#handelButtonAction" prefHeight="52.0" prefWidth="227.0" style="-fx-border-radius: .6em; -fx-background-color: #F05454; -fx-border-width: 1px; -fx-border-color: white; -fx-background-radius: 0.6em; -fx-font-weight: bold; -fx-font-size: 20px;" text="Back">
+         <font>
+            <Font size="18.0" />
+         </font></Button>
+      <ComboBox fx:id="c6" layoutX="532.0" layoutY="856.0" onAction="#handelButtonAction" prefHeight="36.0" prefWidth="278.0" style="-fx-background-radius: .6em;" />
+      <ComboBox fx:id="c4" layoutX="532.0" layoutY="759.0" onAction="#handelButtonAction" prefHeight="36.0" prefWidth="278.0" style="-fx-background-radius: .6em;" />
+      <ComboBox fx:id="c2" layoutX="532.0" layoutY="662.0" onAction="#handelButtonAction" prefHeight="36.0" prefWidth="278.0" style="-fx-background-radius: .6em;" />
+      <ComboBox fx:id="c3" layoutX="136.0" layoutY="759.0" onAction="#handelButtonAction" prefHeight="36.0" prefWidth="278.0" style="-fx-background-radius: .6em;" />
+      <ComboBox fx:id="c5" layoutX="136.0" layoutY="856.0" onAction="#handelButtonAction" prefHeight="36.0" prefWidth="278.0" style="-fx-background-radius: .6em;" />
+      <Label layoutX="144.0" layoutY="815.0" prefHeight="30.0" prefWidth="168.0" style="-fx-font-size: 25px; -fx-text-fill: white;" text="Fifth Subject" />
+      <Label layoutX="143.0" layoutY="624.0" prefHeight="30.0" prefWidth="160.0" style="-fx-font-size: 25px; -fx-text-fill: white;" text="First Subject" />
+      <Label layoutX="542.0" layoutY="815.0" prefHeight="30.0" prefWidth="219.0" style="-fx-font-size: 25px; -fx-text-fill: white;" text="Sixth Subject" />
+      <Label layoutX="542.0" layoutY="718.0" prefHeight="30.0" prefWidth="186.0" style="-fx-font-size: 25px; -fx-text-fill: white;" text="Fourth Subject" />
+      <Label layoutX="144.0" layoutY="718.0" prefHeight="30.0" prefWidth="186.0" style="-fx-font-size: 25px; -fx-text-fill: white;" text="Thrid Subject" />
+      <Label layoutX="533.0" layoutY="624.0" prefHeight="30.0" prefWidth="276.0" style="-fx-font-size: 25px; -fx-text-fill: white;" text="Second Subject" />
+   </children>
+</AnchorPane>
